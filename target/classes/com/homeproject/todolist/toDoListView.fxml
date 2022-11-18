@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      prefHeight="500.0" prefWidth="494.0" BorderPane.alignment="CENTER"  fx:controller="com.homeproject.todolist.controllers.ToDoListController">
+    <children>
+        <AnchorPane prefHeight="60.0" styleClass="pane">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <children>
+                <RadioButton fx:id="inWorkRB" contentDisplay="CENTER" layoutX="21.0" layoutY="9.0" mnemonicParsing="false" onAction="#showTaskInWork" prefHeight="20.0" prefWidth="100.0" selected="true" text="В работе" AnchorPane.topAnchor="10.0">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="categoryGroup" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="isExecuteRB" contentDisplay="CENTER" layoutX="104.0" layoutY="9.0" mnemonicParsing="false" onAction="#showExecutedTask" prefHeight="20.0" prefWidth="100.0" text="Уже сделано" toggleGroup="$categoryGroup" AnchorPane.topAnchor="10.0" />
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tableToDoItems" editable="true" onMouseClicked="#choiseRow" prefHeight="493.0" prefWidth="449.0" style="-fx-background-color: #ECEFF1;" styleClass="table-view" VBox.vgrow="ALWAYS">
+            <columns>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </TableView>
+        <AnchorPane id="bottomPanel" prefHeight="70.0" prefWidth="498.0" VBox.vgrow="NEVER">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <children>
+                <Button id="newTaskBtn" fx:id="newTaskBtn" alignment="TOP_LEFT" layoutX="376.0" layoutY="8.0" mnemonicParsing="false" onAction="#onCreateNewTask" styleClass="btn" text="Новая задача" textFill="#cacaca" AnchorPane.rightAnchor="15.199999999999989">
+                    <font>
+                        <Font name="Kristen ITC" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

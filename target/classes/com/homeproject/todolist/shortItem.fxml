@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="shortItem" fx:id="shortItem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="80.0" prefWidth="280.0" stylesheets="@../style/shortItemStyleSheet.css"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.homeproject.todolist.controllers.ShortItemController">
+    <children>
+        <Label fx:id="dateCreate" layoutX="14.0" layoutY="14.0" text="dateCreate" textFill="#cacaca"/>
+        <Label fx:id="nameToDo" layoutX="14.0" layoutY="30.0" prefHeight="27.0" prefWidth="190.0" text="nameToDo"
+               textFill="#cacaca" wrapText="true">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Button id="btnShowMore" fx:id="btnShowMore" layoutX="250.0" layoutY="45.0" maxHeight="15.0" maxWidth="15.0"
+                minHeight="15.0"
+                minWidth="15.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0"
+                onAction="#showMore"/>
+        <Button id="btnExecute" fx:id="btnExecute" layoutX="227.0" layoutY="45.0" maxHeight="15.0" maxWidth="15.0"
+                minHeight="15.0" minWidth="15.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0"
+                onAction="#executeTask"/>
+    </children>
+</AnchorPane>

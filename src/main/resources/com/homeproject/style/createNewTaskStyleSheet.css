@@ -1,0 +1,21 @@
+#newTaskDialog{
+    -fx-background-color : #DCDCDC;
+}
+.btn{
+    -fx-background-color : #2F2B43 ;
+}
+.btn:hover{
+    -fx-background-color :#3C686E ;
+}
+.btn:pressed{
+    -fx-background-color : #2F2B43 ;
+}
+#topPanel{
+    -fx-background-color : #10083C;
+}
+#imageClose {
+   -fx-image: url("../img/close.png");
+}
+#imageClose:hover {
+   -fx-image: url("../img/closeHover.png");
+}

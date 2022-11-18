@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#onMouseDragged"
+            onMousePressed="#onMousePressed"
+            prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.homeproject.todolist.controllers.ErrorWindowController"
+            stylesheets="@../style/errorWindowStyleSheet.css">
+    <children>
+        <AnchorPane fx:id="top" prefHeight="18.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <ImageView id="imageClose" fx:id="closeImage" fitHeight="18.0" fitWidth="18.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0">
+                    <image>
+                        <Image url="@../img/close.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <ImageView fx:id="errorImage" fitHeight="100.0"
+                   fitWidth="100.0" layoutX="14.0" layoutY="50.0" pickOnBounds="true"
+                   preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0"
+                   AnchorPane.topAnchor="50.0" >
+            <image>
+                <Image url="@../img/important.png" />
+            </image>
+        </ImageView>
+      <Label fx:id="errorTextPlace" layoutX="144.0" layoutY="40.0" prefHeight="120.0" prefWidth="230.0" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

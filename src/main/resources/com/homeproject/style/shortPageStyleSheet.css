@@ -1,0 +1,9 @@
+#shortPage{
+    -fx-background-color: #DCDCDC;
+}
+#topPane{
+    -fx-background-color:#10083C;
+}
+#scrollPane .viewport{
+    -fx-background-color: #DCDCDC;
+}

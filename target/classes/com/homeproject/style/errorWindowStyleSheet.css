@@ -1,0 +1,9 @@
+#top{
+    -fx-background-color : #10083C;
+}
+#imageClose {
+   -fx-image: url("../img/close.png");
+}
+#imageClose:hover {
+   -fx-image: url("../img/closeHover.png");
+}

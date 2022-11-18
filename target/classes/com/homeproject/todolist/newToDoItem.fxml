@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="newTaskDialog" fx:id="newTaskMainPanel" onMouseDragged="#onMouseDragged"
+            onMousePressed="#onMousePressed" prefHeight="314.0" prefWidth="322.0"
+            scaleShape="false" stylesheets="@../style/createNewTaskStyleSheet.css"
+            xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.homeproject.todolist.controllers.NewToDoItemController">
+    <children>
+      <AnchorPane id="topPanel" fx:id="topPanel" layoutX="4.0" layoutY="4.0" prefHeight="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <ImageView id="imageClose" fx:id="imageClose" fitHeight="18.0" fitWidth="18.0" onMouseClicked="#closeWindowCreateTask" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                  <image>
+                      <Image url="@../img/close.png" />
+                  </image>
+              </ImageView>
+         </children>
+      </AnchorPane>
+        <Label layoutX="36.0" layoutY="32.0" text="Что делаем?" />
+        <TextField fx:id="newNameTask" layoutX="36.0" layoutY="54.0" prefHeight="26.0" prefWidth="249.0" />
+        <Label layoutX="36.0" layoutY="89.0" text="Поподробнее..." />
+        <TextArea fx:id="newDescriptionTask" layoutX="36.0" layoutY="106.0" prefHeight="114.0" prefWidth="250.0"
+                  wrapText="true" />
+
+        <Button fx:id="createTaskButton" layoutX="14.0" layoutY="258.0" mnemonicParsing="false" onAction="#onCreateNewTask" prefHeight="26.0" prefWidth="122.0" styleClass="btn" text="Понеслась" textFill="#cacaca">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="cancelCreateTaskButton" layoutX="172.0" layoutY="258.0" mnemonicParsing="false" onAction="#closeWindowCreateTask" prefHeight="26.0" prefWidth="136.0" styleClass="btn" text="Не сегодня" textFill="#cacaca">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
