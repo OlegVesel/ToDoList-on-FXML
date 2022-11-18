@@ -1,8 +1,12 @@
 .leftPanel{
     -fx-background-color :  #0C344E;
+    -fx-border-color: #606060;
+    -fx-border-width: 1px;
 }
 #topPanel{
-    -fx-background-color : #10083C;
+    -fx-background-color : #0C344E;
+    -fx-border-color: #606060;
+    -fx-border-width: 1px;
 }
 #bottomPanel{
     -fx-background-color :#DCDCDC;
@@ -21,56 +25,67 @@
 }
 .hBoxBtn{
     -fx-alignment: center;
-
     -fx-border-color : #C1C1C1;
 }
 #mainPanel{
     -fx-min-height: 500px;
     -fx-min-width: 600px;
+    -fx-border-color: #606060;
+    -fx-border-width: 1px;
 }
-
-#showTodoListBtn{
-    -fx-background-color : #2F2B43 ;
+Button{
+    -fx-background-color : #0C344E ;
 }
+Button:hover{
+    -fx-background-color :#3C686E ;
+}
+/*Button:pressed{*/
+/*    -fx-background-color : #2F2B43 ;*/
+/*}*/
+Button:focused{
+    -fx-background-color : #01514C ;
+}
+/*#newTaskBtn{*/
+/*    -fx-background-color : #2F2B43 ;*/
+/*}*/
+/*#newTaskBtn:hover{*/
+/*    -fx-background-color :#3C686E ;*/
+/*}*/
+/*#newTaskBtn:pressed{*/
+/*    -fx-background-color : #2F2B43 ;*/
+/*}*/
+/*#showTodoListBtn{*/
+/*    -fx-background-color : #0C344E ;*/
+/*}*/
 #showTodoListBtn:hover{
-    -fx-background-color :#3C686E ;
     -fx-border-width: 0 0 0 5px;
     -fx-border-color: #cacaca;
 }
-#showTodoListBtn:pressed{
-    -fx-background-color : #2F2B43 ;
-}
+/*#showTodoListBtn:pressed{*/
+/*    -fx-background-color : #2F2B43 ;*/
+/*}*/
 #showTodoListBtn:focused{
-    -fx-background-color : #01514C ;
     -fx-border-width: 0 0 0 5px;
     -fx-border-color: #cacaca;
 }
-#showBtn{
-    -fx-background-color : #2F2B43 ;
-}
-#showBtn:hover{
-    -fx-background-color :#3C686E ;
-    -fx-border-width: 0 0 0 5px;
-    -fx-border-color: #cacaca;
-}
-#showBtn:pressed{
-    -fx-background-color : #2F2B43 ;
-}
-#showBtn:focused{
-    -fx-background-color : #01514C ;
-    -fx-border-width: 0 0 0 5px;
-    -fx-border-color: #cacaca;
-}
+/*#showBtn{*/
+/*    -fx-background-color : #0C344E ;*/
+/*}*/
+/*#showBtn:hover{*/
+/*    -fx-background-color :#3C686E ;*/
+/*    -fx-border-width: 0 0 0 5px;*/
+/*    -fx-border-color: #cacaca;*/
+/*}*/
+/*#showBtn:pressed{*/
+/*    -fx-background-color : #2F2B43 ;*/
+/*}*/
+/*#showBtn:focused{*/
+/*    -fx-background-color : #01514C ;*/
+/*    -fx-border-width: 0 0 0 5px;*/
+/*    -fx-border-color: #cacaca;*/
+/*}*/
 
-#newTaskBtn{
-    -fx-background-color : #2F2B43 ;
-}
-#newTaskBtn:hover{
-    -fx-background-color :#3C686E ;
-}
-#newTaskBtn:pressed{
-    -fx-background-color : #2F2B43 ;
-}
+
 #imageClose {
    -fx-image: url("../img/close.png");
 }
@@ -93,7 +108,7 @@
     -fx-background-color: -fx-table-cell-border-color, #DCDCDC;
 }
 #menuBar{
-    -fx-background-color : #10083C;
+    -fx-background-color : #0C344E;
     -fx-padding: 0;
 }
 #menuBar .label{
@@ -118,7 +133,7 @@
 }
 
 .context-menu {
-    -fx-background-color: #10083C;
+    -fx-background-color: #0C344E;
     -fx-background-insets: 0, 0, 0;/*0, 1, 2;
     -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;  4 1 8 1 */
 }
